@@ -15,14 +15,14 @@ foreach ($evenNumbers as $numbers):?>
 <h3 style="color: darkgreen;">Exercici 2</h3>
 
 <?php
-
 $animals = ["elephant", "Lion", "Tiger", "Giraffe", "Monkey", "Hippopotamus"];
 
 $count = count($animals);
 ?>
-
 <strong><?= "Hay $count en total";?></strong>
 
+<br>
+<br>
 
 <?php
 $animals = ["elephant", "Lion", "Tiger", "Giraffe", "Monkey", "Hippopotamus"];
@@ -32,7 +32,15 @@ $lastItem = array_pop($animals);
 
 // comprobar los indices
 print_r($animals);
+?>
 
-$count = count($animals);
+<br>
+<br>
+
+<?php 
+
+$animals = array_values($animals);
+print_r($animals);
+
 ?>
 
