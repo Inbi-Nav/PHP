@@ -1,3 +1,5 @@
+<h3 style="color: darkgreen;">Exercici 3</h3>
+
 <?php
 function IsCharacter ($words, $char) {
   foreach ($words as $word) {

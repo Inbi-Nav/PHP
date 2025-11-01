@@ -47,3 +47,26 @@ Comprobar que los índices estén normalizados (array_values()).
 Mostrar el tamaño y contenido final del array.
 
 Conceptos: count(), array_pop, array_values(), print_r().
+
+🧩 Ejercicio 3
+
+Objetivo:
+Crear una función que reciba un array de palabras y un carácter, y devuelva true si todas las palabras del array contienen ese carácter.
+
+Descripción:
+En este ejercicio se define una función llamada IsCharacter() que recorre un array de palabras y verifica si cada palabra contiene el carácter indicado.
+
+Si todas las palabras lo contienen, devuelve true.
+
+Si alguna no lo contiene, devuelve false.
+
+La comprobación se realiza con la función str_contains() y se ignora si el carácter está en mayúscula o minúscula usando strtolower().
+
+
+🧩 Ejercicio 4
+
+Objetivo:
+Crear un array asociativo que represente información personal.
+
+Descripción:
+Se construye un array con claves descriptivas y valores correspondientes, representando datos personales del usuario.
