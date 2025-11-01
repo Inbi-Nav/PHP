@@ -1,4 +1,4 @@
-<h3 style="color: brown;">Exercici 1 </h3>
+<h3 style="color:darkgreen;">Exercici 1 </h3>
 
 <?php
 $evenNumbers = ['2', '4', '6', '8', '10', '12'];
