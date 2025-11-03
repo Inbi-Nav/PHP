@@ -49,6 +49,6 @@ $numeros = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
 $sumaPrimos = array_reduce($numeros, $callback, 0);
 
-echo  $sumaPrimos; 
+echo  "La suma total de los numeros primos es: $sumaPrimos"; 
 
 ?>
