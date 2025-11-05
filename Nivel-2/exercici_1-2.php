@@ -60,28 +60,45 @@ $ClaseB = [
     "Alex"   => [2, 0, 5, 4, 5]
 ];
 
-// Media de cada alumno 
-function notaMedia ($ClaseB) {
+function calcularNotaMediaAlumno ($ClaseB) {
     $notaMedia = [];
-
     foreach($ClaseB as $nombre => $notas) {
         $sumaNota = array_sum($notas);
         $count = count($notas);
         $media = $sumaNota / $count;
         $notaMedia[$nombre] = $media;
     }
-
     return $notaMedia;
 }
 
-$resultado = notaMedia($ClaseB);
-
-foreach ($resultado as $nombre => $media) {
+function mostrarNotaMediaAlumnos($notasMedias) {
+foreach ($notasMedias as $nombre => $media) {
     echo "$nombre tiene una nota media de $media<br>";
+    }
 }
 
-// Media general 
-$sum = array_sum($resultado);
-$countResultado = count($resultado);
-print_r($sum / $countResultado); 
+function calcularNotaMediaClase($notasMedias){
+$sum = array_sum($notasMedias);
+$countResultado = count($notasMedias);
+return $sum / $countResultado; 
+}
+
+
+function gestionarNotas($Clase) {
+    echo "<h2>Nota Media de los alumnos </h2>";
+
+    $notasMedias = calcularNotaMediaAlumno($Clase);
+
+    mostrarNotaMediaAlumnos($notasMedias);
+
+    echo "<br><h2>Nota media de la clase:</h2>";
+
+    $mediaNotaClase = calcularNotaMediaClase($notasMedias);
+
+    echo "La nota media de la clase es: ".  number_format($mediaNotaClase, 2);
+
+}
+gestionarNotas($ClaseB);
+
+
 ?>
